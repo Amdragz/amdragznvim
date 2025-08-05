@@ -7,7 +7,7 @@
 
 This configuration is built using the Lazy.nvim plugin manager and is compatible with Neovim **0.11+**.
 
-clone with **git clone repo name ~/.config/nvim**
+clone with **git clone https://github.com/Amdragz/amdragznvim ~/.config/nvim**
 
 ---
 
