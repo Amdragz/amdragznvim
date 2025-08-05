@@ -142,24 +142,39 @@ sudo apt install gcc make ripgrep unzip git neovim
 
 </details>
 
-# Ubuntu install options
+### 📦 Ubuntu Installation
 
-option 1
-# Now we install nvim
+<details>
+<summary><strong>Option 1: Download Neovim from GitHub Releases (latest stable)</strong></summary>
+
+```bash
+# Install dependencies
+sudo apt update
+sudo apt install make gcc ripgrep unzip git xclip curl
+
+# Download and extract latest Neovim release
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 sudo rm -rf /opt/nvim-linux-x86_64
 sudo mkdir -p /opt/nvim-linux-x86_64
 sudo chmod a+rX /opt/nvim-linux-x86_64
 sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 
-# make it available in /usr/local/bin, distro installs to /usr/bin
-sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
+# Make Neovim available globally
+sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
+```
 
+</details>
 
-option 2
+<details>
+<summary><strong>Option 2: Install from Neovim Unstable PPA (supports 0.11+)</strong></summary>
+
+```bash
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip neovim
+```
+
+</details>
 
 ---
 
