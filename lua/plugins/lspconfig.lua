@@ -15,11 +15,11 @@ return {
 			},
 		})
 
-		-- vim.api.nvim_create_autocmd("LspAttach", {
-		-- 	callback = function(args)
-		-- 		lsp.on_attach(nil, args.buf)
-		-- 	end,
-		-- })
+		 vim.api.nvim_create_autocmd("LspAttach", {
+		 	callback = function(args)
+		 		lsp.on_attach(nil, args.buf)
+		 	end,
+		 })
 
 		vim.lsp.config("*", {
 			capabilities = lsp.capabilities,
